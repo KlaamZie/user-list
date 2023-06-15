@@ -2,22 +2,50 @@ import React, {useContext, useEffect, useState} from 'react';
 import "../../styles/table/table.scss"
 import "../../styles/table/modal.scss"
 import {AppContext} from "../../context/AppContext";
-import EmployeeRow from "./EmployeeRow";
+import Row from "./Row/Row";
 import Attributes from "./Attributes";
 import getEmployees from "../../lib/getEmployees";
 import Pagination from "./Pagination";
-import EmployeeRowSkeleton from "./EmployeeRow.skeleton";
+import RowSkeleton from "./Row/Row.skeleton";
 import Skeleton from "react-loading-skeleton";
-function EmployeesTable(props) {
+import Filters from "./Filters/Filters";
+function Table(props) {
     const [loading, setLoading] = useState(false);
     const [selected, setSelected] = useState(null);
-    const {employees, setEmployees, page} = useContext(AppContext);
+    const {employees, setEmployees, page, setPage, setTotalPages, nat} = useContext(AppContext);
 
-    const fetchData = async (page, gender, nat) => {
+    const fetchData = async (data) => {
+        let reset = false;
         setLoading(true);
-        const data = await getEmployees(page, gender, nat);
 
-        setEmployees([...employees, ...data]);
+        let newPage = null;
+        let newNat = "";
+
+        if(data) {
+            if(data.newPage) {
+                newPage = page + 1;
+            }
+
+            if(data.newNat !== undefined && data.newNat !== nat) {
+                newNat = data.newNat;
+                newPage = 1;
+                reset = true;
+            } else if (nat) {
+                newNat = nat;
+            }
+        }
+
+
+
+        const _employees = await getEmployees(newPage, newNat);
+
+        if(reset) {
+            setPage(1);
+            setTotalPages(1);
+            setEmployees(_employees);
+        } else {
+            setEmployees([...employees, ..._employees]);
+        }
         setLoading(false);
     }
 
@@ -29,8 +57,6 @@ function EmployeesTable(props) {
     const handleSelected = (employee) => {
         setSelected(employee);
     }
-
-    console.log(Array(12).fill(0, 0, 12))
 
     return (
         <>
@@ -47,11 +73,12 @@ function EmployeesTable(props) {
                 </div>
             }
             <div className={"table-container"}>
+                <Filters fetchData={fetchData}/>
                 <Attributes />
                 {
                     loading && Array(12).fill(0, 0, 12).map((_, index) => {
                         return <React.Fragment key={index}>
-                            <EmployeeRowSkeleton />
+                            <RowSkeleton />
                         </React.Fragment>
                     })
                 }
@@ -59,7 +86,7 @@ function EmployeesTable(props) {
                     !loading && <>
                         {employees.slice((page - 1) * 12, page * 12).map(employee => {
                             return <React.Fragment key={employee.email}>
-                                <EmployeeRow employee={employee} handleSelected={handleSelected} loading={loading}/>
+                                <Row employee={employee} handleSelected={handleSelected} loading={loading}/>
                             </React.Fragment>
                         })}
                     </>
@@ -71,4 +98,4 @@ function EmployeesTable(props) {
     );
 }
 
-export default EmployeesTable;
+export default Table;

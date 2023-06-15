@@ -1,0 +1,17 @@
+.filters {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filters-layout {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}

@@ -1,7 +1,7 @@
 import "./styles/global.scss";
 import {Header} from "./components/Header";
 import {useEffect, useState} from "react";
-import EmployeesTable from "./components/Table/EmployeesTable";
+import Table from "./components/Table/Table";
 import getName from "./lib/getName";
 import {AppContext} from "./context/AppContext";
 import getEmployees from "./lib/getEmployees";
@@ -10,8 +10,7 @@ export function App() {
     const [employees, setEmployees] = useState([]);
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
-    const [gender, setGender] = useState(null);
-    const [nat, setNat] = useState(null);
+    const [nat, setNat] = useState("");
 
     return <>
         <AppContext.Provider value={{
@@ -21,13 +20,11 @@ export function App() {
             setPage,
             totalPages,
             setTotalPages,
-            gender,
-            setGender,
             nat,
             setNat
         }}>
             <Header />
-            <EmployeesTable />
+            <Table />
         </AppContext.Provider>
     </>;
 }

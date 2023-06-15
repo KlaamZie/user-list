@@ -2,17 +2,14 @@ import getName from "./getName";
 import {AppContext} from "../context/AppContext";
 import {useContext} from "react";
 
-export default function getEmployees(page, gender, nat) {
+export default function getEmployees(page, nat) {
     let queryString = "https://randomuser.me/api/?results=12&seed=abc";
 
+    if(nat) {
+        queryString += `&nat=${nat.toLocaleLowerCase()}`;
+    }
     if(page) {
         queryString += `&page=${page}`;
-    }
-    if(gender) {
-        queryString += `&gender=${gender}`
-    }
-    if(nat) {
-        queryString += `&nat=${nat}`;
     }
 
     const fetchData = async () => {
@@ -28,7 +25,6 @@ export default function getEmployees(page, gender, nat) {
                         phone: employee.phone,
                         city: employee.location.city,
                         nationality: employee.nat,
-                        gender: employee.gender
                     }
                 })
             })

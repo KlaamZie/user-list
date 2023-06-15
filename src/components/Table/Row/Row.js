@@ -1,6 +1,6 @@
 import React from 'react';
-import "../../styles/table/row.scss"
-function EmployeeRow(props) {
+import "../../../styles/table/row.scss"
+function Row(props) {
     return (
         <>
             <div className={"row table-layout"}>
@@ -15,4 +15,4 @@ function EmployeeRow(props) {
     );
 }
 
-export default EmployeeRow;
+export default Row;

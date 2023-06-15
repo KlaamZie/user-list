@@ -12,12 +12,13 @@ function Pagination(props) {
     };
 
     const handleNext = () => {
+        setPage(page + 1);
+
         if(page + 1 > totalPages) {
-            props.fetchData(page + 1);
+            props.fetchData({newPage: true});
             setTotalPages(totalPages + 1);
         }
 
-        setPage(page + 1);
         window.scrollTo(0, 0);
     };
 
