@@ -1,0 +1,32 @@
+.row {
+  background-color: #fff;
+  border-radius: 0.5rem;
+
+  img {
+    border-radius: 50%;
+    height: 3rem;
+  }
+
+  .item:last-child {
+    display: block;
+  }
+
+  .item-button {
+    width: fit-content;
+    padding: 2px 8px;
+    justify-self: end;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .row {
+    .item:last-child {
+      display: none;
+    }
+  }
+}
