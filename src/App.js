@@ -8,14 +8,23 @@ import getEmployees from "./lib/getEmployees";
 
 export function App() {
     const [employees, setEmployees] = useState([]);
-    const [pages, setPages] = useState(0);
+    const [page, setPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
+    const [gender, setGender] = useState(null);
+    const [nat, setNat] = useState(null);
 
     return <>
         <AppContext.Provider value={{
             employees,
             setEmployees,
-            pages,
-            setPages
+            page,
+            setPage,
+            totalPages,
+            setTotalPages,
+            gender,
+            setGender,
+            nat,
+            setNat
         }}>
             <Header />
             <EmployeesTable />
