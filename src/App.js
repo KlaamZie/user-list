@@ -1,10 +1,8 @@
 import "./styles/global.scss";
 import { Header } from "./components/Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Table from "./components/Table/Table";
-import getName from "./lib/getName";
 import { AppContext } from "./context/AppContext";
-import getEmployees from "./lib/getEmployees";
 
 export function App() {
   const [employees, setEmployees] = useState([]);
@@ -14,6 +12,7 @@ export function App() {
 
   return (
     <>
+      <Header />
       <AppContext.Provider
         value={{
           employees,
@@ -26,7 +25,6 @@ export function App() {
           setNat,
         }}
       >
-        <Header />
         <Table />
       </AppContext.Provider>
     </>

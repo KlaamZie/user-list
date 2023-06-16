@@ -1,6 +1,4 @@
 import getName from "./getName";
-import { AppContext } from "../context/AppContext";
-import { useContext } from "react";
 
 export default function getEmployees(page, nat) {
   let queryString = "https://randomuser.me/api/?results=12&seed=abc";

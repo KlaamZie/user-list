@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/table/row.scss";
 import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+
 function RowSkeleton() {
   return (
     <>

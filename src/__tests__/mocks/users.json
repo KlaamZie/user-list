@@ -1,0 +1,250 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "city": "Billings"
+      },
+      "email": "jennie.nichols@example.com",
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "FR"
+    }
+  ],
+  "info": {
+    "seed": "56d27f4a53bd5441",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
