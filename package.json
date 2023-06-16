@@ -4,8 +4,8 @@
   "source": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "jest --watch"
   },
   "devDependencies": {
@@ -35,7 +35,6 @@
     "react-loading-skeleton": "^3.3.1",
     "react-placeholder": "^4.1.0"
   },
-  "main": "index.js",
   "repository": "git@github.com:KlaamZie/user-list.git",
   "author": "Enzo Viry <enzo.viry@gmail.com>"
 }
